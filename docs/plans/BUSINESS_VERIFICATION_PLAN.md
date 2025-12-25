@@ -13,7 +13,7 @@
 |------|:------:|-------|
 | Domain purchased | ✅ | liam-is-an.ai |
 | Website live | ❌ | Not set up |
-| Business registered (ABN) | ❓ | **VERIFY** |
+| Business registered (ABN) | ✅ | 94 885 368 933 |
 | Business name registered | ❓ | **VERIFY** |
 | Domain email | ❌ | Not planned (may be required) |
 | Meta Business account | ❓ | **VERIFY** |
@@ -21,7 +21,8 @@
 ### Your Details
 
 ```
-Business Name:    [TBD - needs to match registration]
+Business Name:    liam-is-an.ai (temporary)
+ABN:              94 885 368 933
 Domain:           liam-is-an.ai
 Mobile:           0431 901 458
 Address:          22/51-57 Railway Parade
@@ -64,7 +65,7 @@ Before Meta can verify your business, you need to be a registered business entit
 
 ### Checklist: Business Registration
 
-- [ ] Check if you already have an ABN: [ABN Lookup](https://abr.business.gov.au/)
+- [x] Check if you already have an ABN: [ABN Lookup](https://abr.business.gov.au/) ✅ 94 885 368 933
 - [ ] If no ABN: Apply at [business.gov.au](https://www.abr.gov.au/)
 - [ ] Register business name at [ASIC](https://asic.gov.au/for-business/registering-a-business-name/)
 - [ ] Save your ABN certificate / Business Name certificate (PDF)
@@ -120,12 +121,12 @@ liam-is-an.ai/
 │   ├── Business Name: [exact registered name]
 │   ├── Address: 22/51-57 Railway Parade, Engadine NSW 2233
 │   ├── Phone: 0431 901 458
-│   ├── ABN: [your ABN]
+│   ├── ABN: 94 885 368 933
 │   └── Contact form (optional)
 │
 └── Footer (on all pages)
     ├── © 2025 [Business Name]
-    ├── ABN: [number]
+    ├── ABN: 94 885 368 933
     └── Phone | Address
 ```
 
@@ -396,7 +397,7 @@ Upload your prepared documents:
 │         - Business name in header/footer                                     │
 │         - Address: 22/51-57 Railway Parade, Engadine NSW 2233               │
 │         - Phone: 0431 901 458 (or +61 431 901 458)                          │
-│         - ABN: [your ABN number]                                             │
+│         - ABN: 94 885 368 933                                             │
 │                                                                              │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
