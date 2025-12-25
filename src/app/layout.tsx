@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Cormorant_Garamond, DM_Sans } from 'next/font/google'
 import Link from 'next/link'
 import './globals.css'
+import SplashScreen from '@/components/SplashScreen'
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -121,6 +122,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${cormorant.variable} ${dmSans.variable}`}>
       <body className="font-sans min-h-screen flex flex-col grain-overlay">
+        <SplashScreen />
         <Header />
         <main className="flex-1 pt-20">
           {children}
