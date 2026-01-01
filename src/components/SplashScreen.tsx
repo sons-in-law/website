@@ -62,7 +62,7 @@ export default function SplashScreen({
         ${isExiting ? 'opacity-0 duration-800' : 'opacity-100 duration-300'}
       `}
       style={{
-        backgroundColor: '#FAF8F5',
+        backgroundColor: '#FFFFFF',
       }}
     >
       {/* Subtle grain overlay matching main site */}

@@ -15,7 +15,7 @@ from manim import *
 import numpy as np
 
 # Brand Colors
-PARCHMENT = "#FAF8F5"
+PARCHMENT = "#FFFFFF"  # Pure white for seamless splash screen
 PARCHMENT_DARK = "#F5F2ED"
 INK = "#1A1918"
 INK_MUTED = "#5C5955"
