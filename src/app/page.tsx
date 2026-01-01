@@ -69,28 +69,30 @@ export default function Home() {
             {/* Right column - Content */}
             <div className="md:col-span-8">
               <h2 className="font-serif text-3xl md:text-4xl font-medium text-ink-900 leading-snug mb-8">
-                Technology should work for you,
-                <span className="text-ink-500"> not the other way around.</span>
+                Navigating the AI singularity,
+                <span className="text-ink-500"> together.</span>
               </h2>
 
               <div className="space-y-6 font-sans text-ink-600 leading-relaxed">
                 <p>
-                  I help small and medium businesses across Australia discover
-                  practical ways to use AI automation. Not the hype &mdash; the real,
-                  useful stuff that saves hours of repetitive work every week.
+                  We&apos;re a team of co-founders passionate about helping small and medium
+                  businesses navigate what feels like alien technology being thrust upon us all.
+                  AI isn&apos;t just another software upgrade &mdash; it&apos;s a fundamental shift
+                  in how work gets done, and we believe every business deserves a guide through it.
                 </p>
 
                 <p>
-                  From automating customer enquiries to streamlining internal processes,
-                  I focus on solutions that integrate naturally with how you already work.
-                  No complicated systems. No steep learning curves. Just tools that make
-                  your day easier.
+                  Unlike traditional IT consultants, we&apos;re technical coders who leverage AI
+                  to its maximum potential every single day. This means we deliver higher quality
+                  work, faster &mdash; and we pass those savings directly on to our clients.
+                  No bloated timelines. No inflated invoices. Just results.
                 </p>
 
                 <p>
-                  Whether you&apos;re a solo operator or a growing team, AI automation
-                  can give you back the time to focus on what matters &mdash; growing your
-                  business and serving your customers.
+                  Whether you&apos;re a solo operator or a growing team, we focus on practical
+                  AI solutions that integrate naturally with how you already work. No complicated
+                  systems. No steep learning curves. Just tools that make your day easier and
+                  give you back time to focus on what matters.
                 </p>
               </div>
             </div>
@@ -110,7 +112,7 @@ export default function Home() {
             {/* Left column - Label */}
             <div className="md:col-span-4">
               <p className="font-sans text-xs uppercase tracking-wide-custom text-ink-500 sticky top-28">
-                What I Do
+                What We Do
               </p>
             </div>
 

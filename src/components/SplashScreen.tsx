@@ -79,7 +79,7 @@ export default function SplashScreen({
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/splash_quick.gif"
-          alt="liam-is-an.ai loading animation"
+          alt="threecommas.ai loading animation"
           className="w-full h-auto mx-auto"
           style={{
             maxHeight: '70vh',

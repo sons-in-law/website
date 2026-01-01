@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Contact | liam-is-an.ai',
+  title: 'Contact | threecommas.ai',
   description: 'Get in touch to discuss how AI automation can help your business. Based in Sydney, Australia.',
 }
 
@@ -20,7 +20,7 @@ export default function Contact() {
           </h1>
           <p className="font-sans text-lg text-ink-600 max-w-xl">
             Whether you have a specific project in mind or just want to explore
-            the possibilities, I&apos;d love to hear from you.
+            the possibilities, we&apos;d love to hear from you.
           </p>
         </div>
       </section>
@@ -102,7 +102,7 @@ export default function Contact() {
                       Business Name
                     </dt>
                     <dd className="font-sans text-ink-900 font-medium">
-                      liam-is-an.ai
+                      threecommas.ai
                     </dd>
                   </div>
 

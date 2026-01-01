@@ -19,15 +19,15 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'liam-is-an.ai | AI Automation for Small & Medium Business',
+  title: 'threecommas.ai | AI Automation for Small & Medium Business',
   description: 'AI automation consultancy helping Australian SMBs streamline operations, reduce manual work, and scale intelligently.',
   keywords: ['AI automation', 'small business', 'consultancy', 'Australia', 'SMB'],
   authors: [{ name: 'Liam Wynne' }],
   openGraph: {
-    title: 'liam-is-an.ai | AI Automation for SMBs',
+    title: 'threecommas.ai | AI Automation for SMBs',
     description: 'AI automation consultancy helping Australian SMBs streamline operations and scale intelligently.',
-    url: 'https://liam-is-an.ai',
-    siteName: 'liam-is-an.ai',
+    url: 'https://threecommas.ai',
+    siteName: 'threecommas.ai',
     locale: 'en_AU',
     type: 'website',
   },
@@ -41,7 +41,7 @@ function Header() {
           href="/"
           className="font-serif text-xl font-medium text-ink-900 tracking-tight hover:text-terracotta-600 transition-colors duration-300"
         >
-          liam-is-an.ai
+          threecommas.ai
         </Link>
 
         <div className="flex items-center gap-8">
@@ -71,7 +71,7 @@ function Footer() {
         <div className="grid md:grid-cols-2 gap-12 mb-16">
           <div>
             <h3 className="font-serif text-2xl font-medium text-ink-900 mb-4">
-              liam-is-an.ai
+              threecommas.ai
             </h3>
             <p className="font-sans text-ink-600 leading-relaxed max-w-sm">
               AI automation consultancy helping Australian small and medium businesses
@@ -103,7 +103,7 @@ function Footer() {
         {/* Bottom section */}
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 text-sm text-ink-500">
           <p className="font-sans">
-            &copy; {new Date().getFullYear()} liam-is-an.ai. All rights reserved.
+            &copy; {new Date().getFullYear()} threecommas.ai. All rights reserved.
           </p>
           <p className="font-sans">
             ABN: 94 885 368 933

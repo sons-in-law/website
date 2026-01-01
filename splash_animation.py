@@ -1,5 +1,5 @@
 """
-liam-is-an.ai — Award-Winning Splash Screen Animation
+threecommas.ai — Award-Winning Splash Screen Animation
 ======================================================
 A sophisticated, warm, and refined logo reveal that captures the essence
 of "AI that works for humans" — technology that feels approachable, not cold.
@@ -19,8 +19,8 @@ PARCHMENT = "#FAF8F5"
 PARCHMENT_DARK = "#F5F2ED"
 INK = "#1A1918"
 INK_MUTED = "#5C5955"
-TERRACOTTA = "#C4725A"
-TERRACOTTA_GLOW = "#D4856A"
+TERRACOTTA = "#C85D42"
+TERRACOTTA_GLOW = "#D87055"
 
 
 class InkParticle(Dot):
@@ -58,7 +58,7 @@ class SplashScreen(Scene):
 
         # Main brand text - split for special ".ai" treatment
         main_text = Text(
-            "liam-is-an",
+            "threecommas",
             font="Georgia",  # Elegant serif
             font_size=72,
             color=INK,
@@ -74,8 +74,8 @@ class SplashScreen(Scene):
             weight=NORMAL,
         )
 
-        # Position ".ai" next to main text
-        ai_text.next_to(main_text, RIGHT, buff=0.02)
+        # Position ".ai" next to main text with generous spacing
+        ai_text.next_to(main_text, RIGHT, buff=0.3)
 
         # Group for unified positioning
         full_logo = VGroup(main_text, ai_text)
@@ -165,30 +165,14 @@ class SplashScreen(Scene):
             rate_func=smooth,
         )
 
-        # --- Stage 3: The ".ai" reveal with warm glow ---
-        # Create a subtle glow behind .ai
-        ai_glow = ai_text.copy()
-        ai_glow.set_color(TERRACOTTA_GLOW)
-        ai_glow.set_opacity(0)
-        ai_glow.scale(1.1)
-        ai_glow.set_stroke(color=TERRACOTTA_GLOW, width=8, opacity=0.3)
-
-        self.add(ai_glow)
+        # --- Stage 3: The ".ai" reveal with smooth fade ---
         ai_text.set_opacity(0)
         self.add(ai_text)
 
-        # Reveal .ai with subtle glow pulse
+        # Smooth fade in for .ai
         self.play(
-            ai_glow.animate.set_opacity(0.4),
             ai_text.animate.set_opacity(1),
-            run_time=0.8,
-            rate_func=smooth,
-        )
-
-        # Fade out the glow
-        self.play(
-            ai_glow.animate.set_opacity(0),
-            run_time=0.5,
+            run_time=1.0,
             rate_func=smooth,
         )
 
@@ -239,7 +223,7 @@ class SplashScreenMinimal(Scene):
 
         # Brand text
         brand = Text(
-            "liam-is-an.ai",
+            "threecommas.ai",
             font="Georgia",
             font_size=64,
             color=INK,
@@ -300,7 +284,7 @@ class SplashScreenPremium(Scene):
         # ═══════════════════════════════════════════════════════════════
 
         main_part = Text(
-            "liam-is-an",
+            "threecommas",
             font="Georgia",
             font_size=80,
             color=INK,
@@ -313,7 +297,7 @@ class SplashScreenPremium(Scene):
             color=TERRACOTTA,
         )
 
-        ai_part.next_to(main_part, RIGHT, buff=0.02)
+        ai_part.next_to(main_part, RIGHT, buff=0.3)
         logo = VGroup(main_part, ai_part).move_to(ORIGIN)
 
         # Refined underline
@@ -386,34 +370,16 @@ class SplashScreenPremium(Scene):
             rate_func=smooth,
         )
 
-        # --- Phase 3: .ai reveal - smooth but quick ---
-        # Simple soft glow that sharpens into crisp text
-        ai_glow = ai_part.copy()
-        ai_glow.set_stroke(color=TERRACOTTA_GLOW, width=12, opacity=0)
-        ai_glow.set_fill(color=TERRACOTTA_GLOW, opacity=0)
-        ai_glow.scale(1.04)
-
-        self.add(ai_glow)
-
-        # Quick glow bloom + text fade in together (smooth single motion)
+        # --- Phase 3: .ai reveal - clean smooth fade ---
+        # Simple, elegant fade in without glow effects
         self.play(
-            ai_glow.animate.set_stroke(opacity=0.3).set_fill(opacity=0.1),
-            LaggedStart(
-                *[char.animate.set_opacity(1) for char in ai_part],
-                lag_ratio=0.12,
-            ),
-            run_time=0.9,
+            ai_part.animate.set_opacity(1),
+            run_time=1.0,
             rate_func=smooth,
         )
 
-        # Glow fades as text settles (quick finish)
-        self.play(
-            ai_glow.animate.set_stroke(opacity=0).set_fill(opacity=0).scale(1.02),
-            run_time=0.4,
-            rate_func=smooth,
-        )
-
-        self.remove(ai_glow)
+        # --- Phase 3.5: Hold after .ai reveal for impact ---
+        self.wait(1.5)
 
         # --- Phase 4: Underline draw ---
         self.play(
