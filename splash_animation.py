@@ -74,8 +74,8 @@ class SplashScreen(Scene):
             weight=NORMAL,
         )
 
-        # Position ".ai" next to main text with generous spacing
-        ai_text.next_to(main_text, RIGHT, buff=0.3)
+        # Position ".ai" next to main text with natural character spacing
+        ai_text.next_to(main_text, RIGHT, buff=0.05)
 
         # Group for unified positioning
         full_logo = VGroup(main_text, ai_text)
@@ -297,7 +297,7 @@ class SplashScreenPremium(Scene):
             color=TERRACOTTA,
         )
 
-        ai_part.next_to(main_part, RIGHT, buff=0.3)
+        ai_part.next_to(main_part, RIGHT, buff=0.05)
         logo = VGroup(main_part, ai_part).move_to(ORIGIN)
 
         # Refined underline
@@ -379,7 +379,7 @@ class SplashScreenPremium(Scene):
         )
 
         # --- Phase 3.5: Hold after .ai reveal for impact ---
-        self.wait(1.5)
+        self.wait(0.5)
 
         # --- Phase 4: Underline draw ---
         self.play(
