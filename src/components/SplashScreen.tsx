@@ -9,7 +9,7 @@ interface SplashScreenProps {
 
 export default function SplashScreen({
   onComplete,
-  duration = 6000 // Animation duration + hold time
+  duration = 4500 // Animation duration (~4s) + buffer
 }: SplashScreenProps) {
   const [isVisible, setIsVisible] = useState(true)
   const [isExiting, setIsExiting] = useState(false)
