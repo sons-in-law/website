@@ -378,45 +378,8 @@ class SplashScreenPremium(Scene):
             rate_func=smooth,
         )
 
-        # --- Phase 3.5: Hold after .ai reveal for impact ---
+        # --- Phase 3.5: Hold after .ai reveal for impact then end ---
         self.wait(0.5)
-
-        # --- Phase 4: Underline draw ---
-        self.play(
-            Create(underline),
-            run_time=0.5,
-            rate_func=smooth,
-        )
-
-        # --- Phase 5: Particles disperse outward and fade ---
-        final_positions = []
-        for i, p in enumerate(particles):
-            angle = np.random.uniform(0, 2 * np.pi)
-            radius = np.random.uniform(4, 6)
-            final_positions.append([
-                radius * np.cos(angle),
-                radius * np.sin(angle),
-                0
-            ])
-
-        self.play(
-            *[
-                particles[i].animate.move_to(final_positions[i]).set_opacity(0)
-                for i in range(len(particles))
-            ],
-            run_time=1.0,
-            rate_func=smooth,
-        )
-
-        # --- Phase 6: Subtle breathing pulse ---
-        self.play(
-            logo.animate.scale(1.015),
-            rate_func=there_and_back,
-            run_time=0.5,
-        )
-
-        # --- Phase 7: Hold ---
-        self.wait(0.7)
 
 
 # Export for easy rendering
