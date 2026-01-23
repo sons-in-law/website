@@ -47,29 +47,30 @@ export default function Contact() {
                 {/* Phone */}
                 <div>
                   <h3 className="font-sans text-xs uppercase tracking-wide-custom text-ink-500 mb-4">
-                    Phone
+                    Mobile
                   </h3>
                   <a
-                    href="tel:+61431901458"
+                    href="tel:+61410770573"
                     className="font-serif text-2xl text-ink-900 link-refined hover:text-terracotta-600 transition-colors duration-300"
                   >
-                    0431 901 458
+                    0410 770 573
                   </a>
                   <p className="font-sans text-sm text-ink-500 mt-2">
-                    +61 431 901 458 (international)
+                    +61 410 770 573 (international)
                   </p>
                 </div>
 
-                {/* Location */}
+                {/* Email */}
                 <div>
                   <h3 className="font-sans text-xs uppercase tracking-wide-custom text-ink-500 mb-4">
-                    Location
+                    Email
                   </h3>
-                  <address className="font-sans text-ink-900 not-italic leading-relaxed">
-                    22/51-57 Railway Parade<br />
-                    Engadine NSW 2233<br />
-                    Australia
-                  </address>
+                  <a
+                    href="mailto:admin@threecommas.ai"
+                    className="font-serif text-2xl text-ink-900 link-refined hover:text-terracotta-600 transition-colors duration-300"
+                  >
+                    admin@threecommas.ai
+                  </a>
                 </div>
               </div>
             </div>
@@ -113,7 +114,7 @@ export default function Contact() {
                       ABN
                     </dt>
                     <dd className="font-sans text-ink-900 font-medium font-mono tracking-wide">
-                      94 885 368 933
+                      16 564 545 165
                     </dd>
                   </div>
 
@@ -121,23 +122,21 @@ export default function Contact() {
 
                   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
                     <dt className="font-sans text-sm text-ink-500">
-                      Phone
+                      Mobile
                     </dt>
                     <dd className="font-sans text-ink-900 font-medium">
-                      0431 901 458
+                      0410 770 573
                     </dd>
                   </div>
 
                   <div className="h-px bg-ink-900/10" />
 
-                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
                     <dt className="font-sans text-sm text-ink-500">
-                      Address
+                      Email
                     </dt>
-                    <dd className="font-sans text-ink-900 font-medium sm:text-right">
-                      22/51-57 Railway Parade<br />
-                      Engadine NSW 2233<br />
-                      Australia
+                    <dd className="font-sans text-ink-900 font-medium">
+                      admin@threecommas.ai
                     </dd>
                   </div>
 
@@ -157,7 +156,7 @@ export default function Contact() {
               <p className="font-sans text-sm text-ink-500 mt-6">
                 ABN can be verified at{' '}
                 <a
-                  href="https://abr.business.gov.au/ABN/View?abn=94885368933"
+                  href="https://abr.business.gov.au/ABN/View?abn=16564545165"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-terracotta-600 link-refined"
@@ -191,10 +190,10 @@ export default function Contact() {
                 business and how AI automation might help.
               </p>
               <a
-                href="tel:+61431901458"
+                href="tel:+61410770573"
                 className="inline-flex items-center gap-3 font-sans text-sm font-medium px-8 py-4 bg-ink-900 text-parchment-100 rounded-full hover:bg-ink-800 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
               >
-                Call 0431 901 458
+                Call 0410 770 573
                 <svg
                   width="16"
                   height="16"

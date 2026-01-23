@@ -84,16 +84,17 @@ function Footer() {
               Get in touch
             </p>
             <a
-              href="tel:+61431901458"
+              href="tel:+61410770573"
               className="font-sans text-ink-900 link-refined block mb-2"
             >
-              0431 901 458
+              0410 770 573
             </a>
-            <address className="font-sans text-ink-600 not-italic leading-relaxed">
-              22/51-57 Railway Parade<br />
-              Engadine NSW 2233<br />
-              Australia
-            </address>
+            <a
+              href="mailto:admin@threecommas.ai"
+              className="font-sans text-ink-600 link-refined block"
+            >
+              admin@threecommas.ai
+            </a>
           </div>
         </div>
 
@@ -106,7 +107,7 @@ function Footer() {
             &copy; {new Date().getFullYear()} threecommas.ai. All rights reserved.
           </p>
           <p className="font-sans">
-            ABN: 94 885 368 933
+            ABN: 16 564 545 165
           </p>
         </div>
       </div>
